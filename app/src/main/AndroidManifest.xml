@@ -17,15 +17,15 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddItemActivity" />
-        <activity android:name=".EditItemActivity" />
-        <activity android:name=".ContactsActivity" />
-        <activity android:name=".AddContactActivity" />
-        <activity android:name=".EditContactActivity"></activity>
+
+        <activity android:name=".AddItemActivity" android:exported="false" />
+        <activity android:name=".EditItemActivity" android:exported="false" />
+        <activity android:name=".ContactsActivity" android:exported="false" />
+        <activity android:name=".AddContactActivity" android:exported="false" />
+        <activity android:name=".EditContactActivity" android:exported="false" />
     </application>
 
 </manifest>
