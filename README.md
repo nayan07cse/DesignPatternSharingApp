@@ -1,11 +1,17 @@
 # DesignPatternSharingApp
 
+![Android CI](https://github.com/nayan07cse/DesignPatternSharingApp/actions/workflows/android.yml/badge.svg)
+
 An Android application demonstrating the implementation of software design patterns in a practical item-sharing context.
 
-## Overview
-This project is an evolution of a "Sharing App" used to manage items and contacts. The primary goal is to showcase **clean architecture** and the practical application of **GoF (Gang of Four) Design Patterns** to create a maintainable and scalable codebase.
+## 🚀 Modern Android Stack
+This project has been updated to follow modern Android development standards:
+- **Target SDK**: 33 (Android 13)
+- **Language**: Java 17
+- **Build System**: Gradle 7.5 + AGP 7.4.2
+- **CI/CD**: Fully automated builds via GitHub Actions
 
-## Design Patterns Implemented
+## 🏗️ Design Patterns Implemented
 
 ### 1. Observer Pattern
 Decouples the data models (`ItemList`, `ContactList`) from the UI components.
@@ -15,23 +21,24 @@ Decouples the data models (`ItemList`, `ContactList`) from the UI components.
 
 ### 2. Command Pattern
 Used for contact management to encapsulate operations as objects.
-- **Commands**: `AddContactCommand.java`, `DeleteContactCommand.java`, `EditContactCommand.java`.
-- **Impact**: Encapsulates requests as objects, allowing for easier maintenance and potential undo/redo functionality.
+- **Commands**: `AddContactCommand`, `DeleteContactCommand`, `EditContactCommand`.
+- **Impact**: Encapsulates requests as objects, allowing for cleaner code and potential undo/redo functionality.
 
 ### 3. Model-View-Controller (MVC)
 Strict separation of concerns using controllers to manage data persistence and business logic.
 - **Model**: `Item`, `Contact`
-- **Controller**: `ItemListController`, `ContactListController`
+- **Controller**: `ItemListController`, `ContactListController`, `ItemController`
 
-## Features
+## 📱 Features
 - **Lend & Borrow**: Track items shared between contacts.
-- **Local Persistence**: Data saved securely using internal storage.
-- **Dynamic UI**: Responsive layouts for adding/editing items with photo support.
+- **Local Persistence**: Data saved using GSON serialization for portable storage.
+- **Media Support**: Capability to attach photos to items using the camera.
+- **Contact Management**: Integrated contact list for assignment of items.
 
-## Installation
-1. Clone the repository.
-2. Open in **Android Studio**.
-3. Sync Gradle and run on a device with **API 23+**.
+## 🛠️ Installation & Setup
+1. Clone the repository: `git clone https://github.com/nayan07cse/DesignPatternSharingApp.git`
+2. Open the project in **Android Studio (Flamingo or newer recommended)**.
+3. Sync Gradle and run on a device or emulator with **Android 6.0 (API 23) or higher**.
 
 ---
 *Developed as part of the Software Design and Architecture Specialization.*
