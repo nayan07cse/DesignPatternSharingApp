@@ -2,10 +2,10 @@
 
 An Android application demonstrating the implementation of software design patterns in a practical item-sharing context.
 
-## 🚀 Overview
+## Overview
 This project is an evolution of a "Sharing App" used to manage items and contacts. The primary goal is to showcase **clean architecture** and the practical application of **GoF (Gang of Four) Design Patterns** to create a maintainable and scalable codebase.
 
-## 🛠 Design Patterns Implemented
+## Design Patterns Implemented
 
 ### 1. Observer Pattern
 Decouples the data models (`ItemList`, `ContactList`) from the UI components.
@@ -23,12 +23,12 @@ Strict separation of concerns using controllers to manage data persistence and b
 - **Model**: `Item`, `Contact`
 - **Controller**: `ItemListController`, `ContactListController`
 
-## 📦 Features
+## Features
 - **Lend & Borrow**: Track items shared between contacts.
 - **Local Persistence**: Data saved securely using internal storage.
 - **Dynamic UI**: Responsive layouts for adding/editing items with photo support.
 
-## ⚙️ Installation
+## Installation
 1. Clone the repository.
 2. Open in **Android Studio**.
 3. Sync Gradle and run on a device with **API 23+**.
