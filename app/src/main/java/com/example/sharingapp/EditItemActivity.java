@@ -128,6 +128,7 @@ public class EditItemActivity extends AppCompatActivity implements Observer {
 
    @Override
    protected void onActivityResult(int request_code, int result_code, Intent intent){
+       super.onActivityResult(request_code, result_code, intent);
        if (request_code == REQUEST_CODE && result_code == RESULT_OK){
            Bundle extras = intent.getExtras();
            image = (Bitmap) extras.get("data");
